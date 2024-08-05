@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'GreatVibes-Regular';
+    src: url('assets/font/GreatVibes-Regular.ttf');
+}
+@font-face {
+    font-family: 'ExpertSans-Bold';
+    src: url('assets/font/ExpertSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'ExpertSans-Regular';
+    src: url('assets/font/ExpertSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'ExpertSans-Light';
+    src: url('assets/font/ExpertSans-Light.ttf');
+}

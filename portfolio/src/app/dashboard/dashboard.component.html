@@ -1,0 +1,32 @@
+<div class="max-w-screen-lg mx-auto flex flex-col h-full">
+    <div class="max-w-screen-lg flex flex-col justify-between md:flex-row mt-16">
+        <div class="flex flex-col gap-4 mt-10">
+            <div class="flex flex-col">
+                <span class="text-5xl portfolio-title">Soumya Kannan</span>
+                <span class="text-2xl portfolio-sub-title1">Senior Software Engineer</span>
+                <span class="text-2xl portfolio-sub-title2">Barclays</span>
+            </div>
+            <span class="portfolio-description py-4 max-w-xl text-lg sm:text-xl text-justify">Passionate and
+                detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in
+                creating
+                visually appealing and seamless user experiences. Proficient in HTML, CSS, and TypeScript with
+                expertise
+                in DOM manipulation, Tailwind for modern styling, and Angular for crafting dynamic and responsive
+                web
+                applications. I bring dedication, creativity, and a collaborative spirit to every endeavor.</span>
+        </div>
+        <img class="portfolio-image mt-10" src="/assets/images/personal.jpg">
+    </div>
+    <div class="flex flex-col mt-4">
+        <span class="side-heading text-4xl">
+            Expertise
+        </span>
+        <div class="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+            <div *ngFor="let skill of skillSet"
+                [class]="'shadow-md hover:scale-105 duration-200 py-2 rounded-lg '+skill.class">
+                <img class="w-20 mx-auto" [src]="skill.imageSrc">
+                <p class="mt-4">{{skill.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
