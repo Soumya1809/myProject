@@ -1,4 +1,22 @@
 <div class="navigation-screen flex flex-row justify-between items-center w-full">
     <span class="text-5xl font-signature mt-2">Portfolio</span>
-    <img src="/assets/images/portfolio-icon.png" class="image-icon" (click)="routeToLink()"/>
+    <div class="flex flex-row items-center gap-4">
+        <div class="flex flex-row items-center gap-2 lang-select-container" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+            <img [src]="selectedCountry.src" class="flag-icon"/>
+            <span>{{selectedCountry.name}}</span>
+            <img src="/assets/images/down_arrow.svg"/>
+        </div>
+        <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="isOpen">
+        <ul class="list">
+            <li *ngFor="let country of countries" (click)="selectCountry(country)">
+                <div class="flex flex-row items-center gap-2">
+                    <img [src]="country.src" class="flag-icon"/>
+                    <span>{{country.name}}</span>
+                </div>
+            </li>
+        </ul>
+        </ng-template>
+        <img [src]="mode === 'dark' ? '/assets/images/light_mode.svg' : '/assets/images/dark_mode.svg'" class="theme-icon" (click)="switchModes()"/>
+        <img src="/assets/images/portfolio-icon.png" class="image-icon" (click)="routeToLink()"/>
+    </div>
 </div>

@@ -15,12 +15,16 @@ export class DashboardComponent implements OnInit {
     {title: 'Tailwind', imageSrc: '/assets/images/tailwind.png', class: 'shadow-sky-400'},
     {title: 'Ngrx', imageSrc: '/assets/images/ngrx.png', class: 'shadow-purple-500'},
     {title: 'Karma', imageSrc: '/assets/images/karma.png', class: 'shadow-teal-500'},
-    {title: 'Github', imageSrc: '/assets/images/github.png', class: 'shadow-gray-950'},
+    {title: 'Github', imageSrc: '/assets/images/github.png', class: 'shadow-gray-500'},
     {title: 'Sql', imageSrc: '/assets/images/sql.png', class: 'shadow-lime-400'}    
-  ]
+  ];  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public applyRouting(){
+    window.open('https://www.barclays.in/global-service-centre/btci/', '_blank');    
   }
 
 }

@@ -3,8 +3,14 @@
         <div class="flex flex-col gap-4 mt-10">
             <div class="flex flex-col">
                 <span class="text-5xl portfolio-title">Soumya Kannan</span>
-                <span class="text-2xl portfolio-sub-title1">Senior Software Engineer</span>
-                <span class="text-2xl portfolio-sub-title2">Barclays</span>
+                <div class="flex flex-row">
+                    <img src="/assets/images/designation_light.svg" class="icon-style"/>
+                    <span class="text-2xl portfolio-sub-title1">Senior Software Engineer</span>
+                </div>
+                <div class="flex flex-row">
+                    <img src="/assets/images/office_light.svg" class="icon-style"/>                    
+                    <span class="text-2xl portfolio-sub-title2" (click)="applyRouting()">Barclays</span>
+                </div>
             </div>
             <span class="portfolio-description py-4 max-w-xl text-lg sm:text-xl text-justify">Passionate and
                 detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in
@@ -16,7 +22,7 @@
                 applications. I bring dedication, creativity, and a collaborative spirit to every endeavor.</span>
         </div>
         <img class="portfolio-image mt-10" src="/assets/images/personal.jpg">
-    </div>
+    </div>    
     <div class="flex flex-col mt-4 px-4">
         <span class="side-heading text-4xl">
             Expertise

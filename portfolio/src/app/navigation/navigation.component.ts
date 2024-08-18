@@ -7,19 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  public mode = 'dark';
+  public isOpen = false;
+  public countries = [
+    {src: '/assets/images/germany.png', name: 'DE'},
+    {src: '/assets/images/united-kingdom.png', name: 'EN'}
+  ];
+  public selectedCountry = this.countries[1];
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public switchModes(){
+    this.mode = this.mode === 'dark' ? 'light' : 'dark';
+  }
+
+  public selectCountry(country: any){
+    this.selectedCountry = country;
+    this.isOpen = false;
+  }
   public routeToLink(){
-    // let link = document.createElement('a');
-    // link.setAttribute('type', 'hidden');
-    // link.href = '/assets/data/Soumya K CV.pdf';
-    // link.download = 'Soumya K CV.pdf';
-    // document.body.appendChild(link);
-    // link.click();
-    // link.remove();
     window.open('https://www.linkedin.com/in/soumyakannan/', '_blank');
   }
 
