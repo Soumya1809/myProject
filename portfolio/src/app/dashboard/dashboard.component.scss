@@ -3,29 +3,32 @@
     border-radius: 1rem;
 }
 .portfolio-title {
-    color: #00395d;
+    color: var(--font-color);
     font-family: 'ExpertSans-Bold';
 }
 .portfolio-description {
     font-family: 'ExpertSans-Regular';
-    color: #023e8a;
+    color: var(--side-header-color);
 }
 .side-heading {
-    color: #00395d;
+    color: var(--font-color);
     font-family: 'ExpertSans-Bold';
     padding-bottom: 1vh;
 }
 .portfolio-sub-title1 {
     font-family: 'ExpertSans-Regular';
     font-style: italic;
-    color: #457b9d;
+    color: var(--sub-title-color);
 }
 .portfolio-sub-title2 {
-    color: #457b9d;
+    color: var(--sub-title-color);
     font-family: 'ExpertSans-Regular';
     cursor: pointer;
     text-decoration: underline;
 }
 .icon-style {
     height: 30px;
+}
+.static-text{
+    color: var(--font-color);
 }

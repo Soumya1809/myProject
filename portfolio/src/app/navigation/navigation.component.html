@@ -1,9 +1,9 @@
 <div class="navigation-screen flex flex-row justify-between items-center w-full">
-    <span class="text-5xl font-signature mt-2">Portfolio</span>
+    <span class="text-5xl font-signature mt-2">{{ 'title' | translate}}</span>
     <div class="flex flex-row items-center gap-4">
         <div class="flex flex-row items-center gap-2 lang-select-container" (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
             <img [src]="selectedCountry.src" class="flag-icon"/>
-            <span>{{selectedCountry.name}}</span>
+            <span class="static-text">{{selectedCountry.name}}</span>
             <img src="/assets/images/down_arrow.svg"/>
         </div>
         <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="isOpen">
@@ -11,7 +11,7 @@
             <li *ngFor="let country of countries" (click)="selectCountry(country)">
                 <div class="flex flex-row items-center gap-2">
                     <img [src]="country.src" class="flag-icon"/>
-                    <span>{{country.name}}</span>
+                    <span class="static-text">{{country.name}}</span>
                 </div>
             </li>
         </ul>

@@ -35,3 +35,21 @@
     background: #888;
     cursor: grab;
 }
+[data-theme="light"]{
+    --border-color: #e2e2e2;
+    --background-color: #ffffff;
+    --font-color: #00395d;
+    --list-seperator: #8b8b8b;
+    --list-border: #ccc;
+    --side-header-color: #023e8a;
+    --sub-title-color: #457b9d;
+}
+[data-theme="dark"]{
+    --border-color: #000000;
+    --background-color: #1f2937;
+    --font-color: #ffffff;
+    --list-seperator: #ffffff;
+    --list-border: #ffffff;
+    --side-header-color: #ffffff;
+    --sub-title-color: #ffffff;
+}

@@ -4,34 +4,28 @@
             <div class="flex flex-col">
                 <span class="text-5xl portfolio-title">Soumya Kannan</span>
                 <div class="flex flex-row">
-                    <img src="/assets/images/designation_light.svg" class="icon-style"/>
-                    <span class="text-2xl portfolio-sub-title1">Senior Software Engineer</span>
+                    <img [src]="mode === 'light' ? '/assets/images/designation_light.svg' : '/assets/images/designation_dark.svg'" class="icon-style" />
+                    <span class="text-2xl portfolio-sub-title1">{{'jobTitle' | translate}}</span>
                 </div>
                 <div class="flex flex-row">
-                    <img src="/assets/images/office_light.svg" class="icon-style"/>                    
-                    <span class="text-2xl portfolio-sub-title2" (click)="applyRouting()">Barclays</span>
+                    <img [src]="mode === 'light' ? '/assets/images/office_light.svg' : '/assets/images/office_dark.svg'" class="icon-style" />
+                    <span class="text-2xl portfolio-sub-title2" (click)="applyRouting()">{{'workPlace' | translate}}</span>
                 </div>
             </div>
-            <span class="portfolio-description py-4 max-w-xl text-lg sm:text-xl text-justify">Passionate and
-                detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in
-                creating
-                visually appealing and seamless user experiences. Proficient in HTML, CSS, and TypeScript with
-                expertise
-                in DOM manipulation, Tailwind for modern styling, and Angular for crafting dynamic and responsive
-                web
-                applications. I bring dedication, creativity, and a collaborative spirit to every endeavor.</span>
+            <span class="portfolio-description py-4 max-w-xl text-lg sm:text-xl text-justify">{{'description' |
+                translate}}</span>
         </div>
         <img class="portfolio-image mt-10" src="/assets/images/personal.jpg">
-    </div>    
+    </div>
     <div class="flex flex-col mt-4 px-4">
         <span class="side-heading text-4xl">
-            Expertise
+            {{'subHeader1' | translate}}
         </span>
         <div class="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             <div *ngFor="let skill of skillSet"
                 [class]="'shadow-md hover:scale-105 duration-200 py-2 rounded-lg '+skill.class">
                 <img class="w-20 mx-auto" [src]="skill.imageSrc">
-                <p class="mt-4">{{skill.title}}</p>
+                <p class="mt-4 static-text">{{skill.title}}</p>
             </div>
         </div>
     </div>

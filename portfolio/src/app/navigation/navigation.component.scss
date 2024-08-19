@@ -1,9 +1,9 @@
 .navigation-screen {
     padding: 0vh 1vh;
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--border-color);
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     position: fixed;
-    background-color: white;
+    background-color: var(--background-color);
 }
 .image-icon {
     border-radius: 100%;
@@ -12,7 +12,7 @@
 }
 .font-signature {
     font-family: 'GreatVibes-Regular';
-    color: #00395d;
+    color: var(--font-color);
 }
 .theme-icon {
     cursor: pointer;
@@ -23,16 +23,16 @@
 }
 .list {
     width: 100px;
-    border: solid 1px #ccc;
+    border: solid 1px var(--list-border);
     border-radius: 5px;
-    background: #fff;
+    background-color: var(--background-color);
     text-align: center;
     padding: 10px;
     margin: 0;
 }
 .list>li {
     list-style-type: none;
-    border-bottom: solid 1px #8b8b8b;
+    border-bottom: solid 1px var(--list-seperator);
     padding: 8px 0;
     cursor: pointer;
 }
@@ -41,7 +41,10 @@
 }
 .lang-select-container {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--list-border);
     cursor: pointer;
     border-radius: 10px;
+}
+.static-text{
+    color: var(--font-color);
 }

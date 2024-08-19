@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../common/shared.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  public mode = 'light';
   public skillSet = [
     {title: 'HTML', imageSrc: '/assets/images/html.png', class: 'shadow-orange-500'},
     {title: 'CSS', imageSrc: '/assets/images/css.png', class: 'shadow-blue-500'},
@@ -18,7 +20,18 @@ export class DashboardComponent implements OnInit {
     {title: 'Github', imageSrc: '/assets/images/github.png', class: 'shadow-gray-500'},
     {title: 'Sql', imageSrc: '/assets/images/sql.png', class: 'shadow-lime-400'}    
   ];  
-  constructor() { }
+  constructor(private sharedService: SharedService) {
+    this.sharedService.$languageObservable.subscribe(value => {
+      if(value != ""){
+        this.sharedService.switchLanguage(value);
+      }
+    });
+    this.sharedService.$themeObservable.subscribe(value => {
+      if(value != ""){
+        this.mode = value;
+      }
+    })
+   }
 
   ngOnInit(): void {
   }
