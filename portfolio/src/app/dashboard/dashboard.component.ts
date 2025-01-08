@@ -19,16 +19,17 @@ export class DashboardComponent implements OnInit {
     {title: 'Karma', imageSrc: '/assets/images/karma.png', class: 'shadow-teal-500'},
     {title: 'Github', imageSrc: '/assets/images/github.png', class: 'shadow-gray-500'},
     {title: 'Sql', imageSrc: '/assets/images/sql.png', class: 'shadow-lime-400'}    
-  ];  
+  ];
+  public experiences: any; 
   constructor(private sharedService: SharedService) {
-    this.sharedService.$languageObservable.subscribe(value => {
-      if(value != ""){
-        this.sharedService.switchLanguage(value);
-      }
-    });
     this.sharedService.$themeObservable.subscribe(value => {
       if(value != ""){
         this.mode = value;
+      }
+    });
+    this.sharedService.$translatorObservable.subscribe(value =>{
+      if(value != null && value != ""){
+        this.experiences = value;
       }
     })
    }
@@ -38,6 +39,10 @@ export class DashboardComponent implements OnInit {
 
   public applyRouting(){
     window.open('https://www.barclays.in/global-service-centre/btci/', '_blank');    
+  }
+
+  public routeToLink(link: string){
+    window.open(link, '_blank');
   }
 
 }

@@ -1,7 +1,62 @@
 {
     "title": "Portfolio",
     "jobTitle": "Senior Software Engineer",
-    "workPlace": "Barclays",
+    "location": "Stuttgart",
     "subHeader1": "Expertise",
-    "description": "Passionate and detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in creating visually appealing and seamless user experiences. Proficient in HTML, CSS, and TypeScript with expertise in DOM manipulation, Tailwind for modern styling, and Angular for crafting dynamic and responsive web applications. I bring dedication, creativity, and a collaborative spirit to every endeavor."
+    "subHeader2": "Experience",
+    "description": "Passionate and detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in creating visually appealing and seamless user experiences. Proficient in HTML, CSS, and TypeScript with expertise in DOM manipulation, Tailwind for modern styling, and Angular for crafting dynamic and responsive web applications. I bring dedication, creativity, and a collaborative spirit to every endeavor.",
+    "experience": [
+        {
+            "company": "Barclays",
+            "logo": "/assets/images/barclays_logo.jpg",
+            "link": "https://www.linkedin.com/company/barclays-bank/",
+            "type": "Fulltime",
+            "duration": "4 years 2 months",
+            "location": "Chennai, India",
+            "roles": [
+                {
+                    "title": "Senior Software Engineer",
+                    "start": "March 2023", 
+                    "end":"November 2024",
+                    "description": [
+                        "Responsible for design and development of in-house reconciliation suite from scratch which includes matching engine, portal to view breaks, etc.",
+                        "Managing UI team which includes task delegation, reviewing pull requests, on-boarding and training new team members.",
+                        "Engaging in requirement analysis, design discussions and proactively suggesting optimal solutions to meet project objectives.",
+                        "Fostering close collaboration with the UI/UX team, maintained rigorous adherence to industry-leading best practices, thereby upholding exceptional standards of code quality throughout the development process."
+                    ]
+                },
+                {
+                    "title": "Graduate Analyst",
+                    "start": "August 2020", 
+                    "end": "February 2023",
+                    "description": [
+                        "Engineered dynamic dashboards, visually appealing charts, responsive grids, and interactive forms tailored for an AI/ML-based application, aimed at providing unparalleled visualization of predictive insights.",
+                        "Pioneered the development of a micro frontend architecture, facilitating the integration of disparate standalone applications into a cohesive and unified platform, thereby enhancing scalability and maintainability",
+                        "Leveraged a diverse array of libraries including Angular Material, Rxjs, AG-Grid, PrimeNg, Ngx-echarts, Gridster, etc.",
+                        "Seamlessly integrated Single Sign On Authentication ensuring streamlined access and heightened security for users.",
+                        "Engineered a rule-based workflow process, empowering users to effortlessly submit, monitor, and approve requests",
+                        "Implemented robust unit testing methodologies, achieving exceptional code coverage and ensuring the reliability and stability of the application."
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Voice Snap",
+            "logo": "/assets/images/voicesnap_logo.jpg",
+            "link": "https://www.linkedin.com/company/voicesnap-software/",
+            "type": "Intern",
+            "duration": "2 months",
+            "location": "Chennai, India",
+            "roles": [
+                {
+                    "title": "Web Developer",
+                    "start": "May 2018", 
+                    "end":"June 2018", 
+                    "description": [
+                        "Developed Server Management Application to track multiple servers present across different geographical locations."
+                    ]
+                }
+            ]
+        }
+    ]
 }

@@ -8,8 +8,8 @@
                     <span class="text-2xl portfolio-sub-title1">{{'jobTitle' | translate}}</span>
                 </div>
                 <div class="flex flex-row">
-                    <img [src]="mode === 'light' ? '/assets/images/office_light.svg' : '/assets/images/office_dark.svg'" class="icon-style" />
-                    <span class="text-2xl portfolio-sub-title2" (click)="applyRouting()">{{'workPlace' | translate}}</span>
+                    <img [src]="mode === 'light' ? '/assets/images/location.png' : '/assets/images/location.png'" class="icon-style" />
+                    <span class="text-2xl portfolio-sub-title1">{{'location' | translate}}</span>
                 </div>
             </div>
             <span class="portfolio-description py-4 max-w-xl text-lg sm:text-xl text-justify">{{'description' |
@@ -26,6 +26,34 @@
                 [class]="'shadow-md hover:scale-105 duration-200 py-2 rounded-lg '+skill.class">
                 <img class="w-20 mx-auto" [src]="skill.imageSrc">
                 <p class="mt-4 static-text">{{skill.title}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col mt-4 px-4 gap-4">
+        <span class="side-heading text-4xl">
+            {{'subHeader2' | translate}}
+        </span>
+        <div class="flex flex-col" *ngFor="let experience of experiences">
+            <div class="flex flex-row gap-2 header-container">
+                <img class="w-14 cursor-pointer" [src]="experience.logo" (click)="routeToLink(experience.link)">
+                <div class="flex flex-col">
+                    <span class="static-text ">
+                        <span class="font-medium underline cursor-pointer" (click)="routeToLink(experience.link)">{{experience.company}}</span>
+                        <span class="font-light italic"> - {{experience.location}}</span>
+                    </span>
+                    <span class="static-text font-light">{{experience.type}} - <span class="italic">{{experience.duration}}</span></span>
+                </div>
+            </div>
+            <div *ngFor="let role of experience.roles" class="flex flex-col roles-container">
+                <div class="flex flex-row gap-2">
+                    <span class="circle"></span>
+                    <span class="static-text font-medium">{{role.title}}</span>
+                </div>
+                <span class="font-thin italic description-container pl-4" [ngClass]="{'text-red-900': mode === 'light', 'static-text': mode === 'dark'}">{{role.start}} - {{role.end}}</span>
+                <div *ngFor="let description of role.description" class="flex flex-row gap-1 description-container">
+                    <img [src]="mode === 'light' ? '/assets/images/arrow_right_dark.svg' : '/assets/images/arrow_right_light.svg'"> 
+                    <span class="static-text font-thin">{{description}}</span>
+                </div>                
             </div>
         </div>
     </div>
