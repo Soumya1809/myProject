@@ -50,7 +50,7 @@
                     <span class="static-text font-medium">{{role.title}}</span>
                 </div>
                 <span class="font-thin italic description-container pl-4" [ngClass]="{'text-red-900': mode === 'light', 'static-text': mode === 'dark'}">{{role.start}} - {{role.end}}</span>
-                <div *ngFor="let description of role.description" class="flex flex-row gap-1 description-container">
+                <div *ngFor="let description of role.description" class="flex flex-row gap-1 description-container role-description">
                     <img [src]="mode === 'light' ? '/assets/images/arrow_right_dark.svg' : '/assets/images/arrow_right_light.svg'"> 
                     <span class="static-text font-thin">{{description}}</span>
                 </div>                
