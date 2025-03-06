@@ -24,7 +24,7 @@ export class AppComponent {
     },
     {
       icon: 'pi pi-whatsapp',
-      url: 'https://wa.me/9952013066'
+      url: 'https://wa.me/+4915756434149 '
     },
     {
       icon: 'pi pi-id-card',
