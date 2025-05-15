@@ -55,10 +55,9 @@ export class DashboardComponent implements OnInit {
   }
 
   public sendMail(){
-    this.route.navigate(['/submit'])
-    // this.sharedService.sendMail(this.contact).subscribe((response:any) =>{
-      
-    // })
+    this.sharedService.sendMail(this.contact).subscribe((response:any) =>{ 
+      this.route.navigate(['/submit'])
+    })
   }
 
 }
