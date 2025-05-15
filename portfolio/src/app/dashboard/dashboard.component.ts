@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../common/shared.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -23,7 +24,12 @@ export class DashboardComponent implements OnInit {
   ];
   public experiences: any; 
   public education: any;
-  constructor(private sharedService: SharedService, private translateService: TranslateService) {
+  public contact = {
+    name: '',
+    replyto: '',
+    message: ''
+  }
+  constructor(private sharedService: SharedService, private route: Router) {
     this.sharedService.$themeObservable.subscribe(value => {
       if(value != ""){
         this.mode = value;
@@ -46,6 +52,13 @@ export class DashboardComponent implements OnInit {
 
   public routeToLink(link: string){
     window.open(link, '_blank');
+  }
+
+  public sendMail(){
+    this.route.navigate(['/submit'])
+    // this.sharedService.sendMail(this.contact).subscribe((response:any) =>{
+      
+    // })
   }
 
 }

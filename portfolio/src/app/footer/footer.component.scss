@@ -1,0 +1,8 @@
+.footer-screen {
+    padding: 0vh 1vh;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    position: fixed;
+    bottom: 0;
+    background-color: var(--background-color);
+}

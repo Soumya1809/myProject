@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
@@ -7,7 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class SharedService {
 
-  constructor(private translateService: TranslateService) { }
+  constructor(private translateService: TranslateService, private http: HttpClient) { }
   
   public $languageSwitcher = new BehaviorSubject("");
   public $languageObservable = this.$languageSwitcher.asObservable();
@@ -23,5 +24,10 @@ export class SharedService {
     this.translateService.get('academic').subscribe(res => {
       this.$translator.next(res)
     })
+  }
+
+  public sendMail(content: any){
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    return this.http.post('https://getform.io/f/aqokglma',content, {'headers': headers, responseType: 'text'});
   }
 }

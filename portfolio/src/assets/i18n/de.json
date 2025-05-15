@@ -5,6 +5,7 @@
     "subHeader1": "Fachwissen",
     "subHeader2": "Erfahrungen",
     "subHeader3": "Ausbildung",
+    "subHeader4": "Portfolio",
     "description": "Engagierte Softwareentwicklerin mit über 4 Jahren Erfahrung in der Entwicklung skalierbarer Webanwendungen mit Angular und Spring Boot. Ich beherrsche HTML, CSS und TypeScript mit Expertise in DOM-Manipulation, Tailwind für modernes Styling und Angular für die Entwicklung dynamischer und responsiver Webanwendungen. Schnelle Lernfähigkeit und Offenheit für neue Technologien zur nachhaltigen Verbesserung von Entwicklungsprozessen.",
     "academic": {
         "experience": [
@@ -103,5 +104,11 @@
                 "grade": "Abschlussnote: 97,8%"
             }
         }
-    }
+    },
+    "contact":"Kontakt",
+    "contactDescription": "Reiche das Formular unten ein, um mit mir in Kontakt zu treten",
+    "formHeader1": "Name eingeben",
+    "formHeader2": "E-Mail eingeben",
+    "formHeader3": "Nachricht eingeben",
+    "formButton": "Absenden"
 }

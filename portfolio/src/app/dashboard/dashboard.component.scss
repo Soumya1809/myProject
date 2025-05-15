@@ -29,9 +29,6 @@
 .icon-style {
     height: 30px;
 }
-.static-text{
-    color: var(--font-color);
-}
 .roles-container{
     padding-left: 2vw;
 }
@@ -56,3 +53,26 @@
 .logo{
     border-radius: 50%;
 }
+.form-field{
+    width: 20vw;
+}
+.gradient-button {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%)}
+.gradient-button {
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+display: block;
+}
+
+.gradient-button:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+         

@@ -12,12 +12,20 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { ButtonModule } from 'primeng/button';
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     DashboardComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    FooterComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -26,6 +34,10 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     AppRoutingModule,
     OverlayModule,
     SpeedDialModule,
+    InputTextModule,
+    FormsModule,
+    ButtonModule,
+    InputTextareaModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

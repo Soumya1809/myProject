@@ -5,6 +5,7 @@
     "subHeader1": "Expertise",
     "subHeader2": "Experience",
     "subHeader3": "Education",
+    "subHeader4": "Portfolio",
     "description": "Dedicated software developer with over four years of experience in developing scalable web applications with Angular and Spring Boot. Proficient in HTML, CSS, and TypeScript with expertise in DOM manipulation, Tailwind for modern styling, and Angular for developing dynamic and responsive web applications. Fast learner and open to new technologies for sustainably improving development processes.",
     "academic": {
         "experience": [
@@ -104,5 +105,11 @@
                 "grade": "Grade - 97.8%"
             }
         }
-    }
+    },
+    "contact":"Contact",
+    "contactDescription": "Submit the form below to get in touch with me",
+    "formHeader1": "Enter your name",
+    "formHeader2": "Enter your mail",
+    "formHeader3": "Enter your message",
+    "formButton": "Send"
 }

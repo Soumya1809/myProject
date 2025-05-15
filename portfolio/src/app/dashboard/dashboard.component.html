@@ -1,15 +1,14 @@
-<app-navigation></app-navigation>
 <div class="max-w-screen-lg mx-auto flex flex-col h-full">
     <div class="max-w-screen-lg flex flex-col justify-between md:flex-row mt-16 px-4 items-center">
         <div class="flex flex-col gap-4 mt-10">
             <div class="flex flex-col">
                 <span class="text-5xl portfolio-title">Soumya Kannan</span>
-                <div class="flex flex-row">
-                    <img [src]="mode === 'light' ? '/assets/images/designation_light.svg' : '/assets/images/designation_dark.svg'" class="icon-style" />
+                <div class="flex flex-row gap-2">
+                    <img [src]="mode === 'light' ? '/assets/images/id.svg' : '/assets/images/id_white.svg'" class="icon-style" />
                     <span class="text-2xl portfolio-sub-title1">{{'jobTitle' | translate}}</span>
                 </div>
-                <div class="flex flex-row">
-                    <img [src]="mode === 'light' ? '/assets/images/location.png' : '/assets/images/location.png'" class="icon-style" />
+                <div class="flex flex-row gap-2">
+                    <img src="/assets/images/location.svg" class="icon-style" />
                     <span class="text-2xl portfolio-sub-title1">{{'location' | translate}}</span>
                 </div>
             </div>
@@ -19,9 +18,12 @@
         <img class="portfolio-image mt-10" src="/assets/images/Profile_Photo_2.png">
     </div>
     <div class="flex flex-col mt-4 px-4">
-        <span class="side-heading text-4xl">
-            {{'subHeader1' | translate}}
-        </span>
+        <div class="flex flex-row gap-2">
+            <img class="w-10 h-10" src="/assets/images/expertise.svg">
+            <span class="side-heading text-4xl underline">
+                {{'subHeader1' | translate}}
+            </span>
+        </div>
         <div class="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             <div *ngFor="let skill of skillSet"
                 [class]="'shadow-md hover:scale-105 duration-200 py-2 rounded-lg '+skill.class">
@@ -31,9 +33,12 @@
         </div>
     </div>
     <div class="flex flex-col mt-4 px-4 gap-4">
-        <span class="side-heading text-4xl">
-            {{'subHeader2' | translate}}
-        </span>
+        <div class="flex flex-row gap-2">
+            <img class="w-10 h-10" src="/assets/images/experience.svg">
+            <span class="side-heading text-4xl underline">
+                {{'subHeader2' | translate}}
+            </span>
+        </div>
         <div class="flex flex-col" *ngFor="let experience of experiences">
             <div class="flex flex-row gap-2">
                 <img class="w-14 cursor-pointer logo" [src]="experience.logo" (click)="routeToLink(experience.link)">
@@ -71,9 +76,12 @@
         </div>
     </div>
     <div class="flex flex-col mt-4 px-4 gap-4">
-        <span class="side-heading text-4xl">
-            {{'subHeader3' | translate}}
-        </span>
+        <div class="flex flex-row gap-2">
+            <img class="w-10 h-10" src="/assets/images/education.svg">
+            <span class="side-heading text-4xl underline">
+                {{'subHeader3' | translate}}
+            </span>
+        </div>
         <span *ngIf="education">
             <div class="flex flex-row gap-2">
                 <img class="w-14 logo" [src]="education['UG']['logo']">
@@ -104,5 +112,41 @@
             </div>
             <span class="font-medium pl-16 static-text">{{education['HigherSecondary']['grade']}} </span>
         </span>
+    </div>
+    <div class="flex flex-col mt-4 px-4 gap-4">
+        <div class="flex flex-row gap-2">
+            <img class="w-10 h-10" src="/assets/images/portfolio.svg">
+            <span class="side-heading text-4xl underline">
+                {{'subHeader4' | translate}}
+             </span>
+        </div>
+        <div class="flex flex-col gap-2 items-center">
+            <img src="/assets/images/work-in-progress.svg" class="h-14 w-14"/>
+            <span class="static-text font-light">Coming Soon...</span>
+        </div>
+    </div>
+    <div class="flex flex-col mt-4 px-4 pb-20">
+        <div class="flex flex-row gap-2">
+            <img class="w-10 h-10" src="/assets/images/mail.svg">
+             <span class="side-heading text-4xl underline">
+            {{'contact' | translate}}
+        </span>
+        </div>
+        <span class="static-text font-thin text-lg pb-10">{{'contactDescription' | translate}}</span>
+        <div class="flex flex-col gap-2 items-center">
+            <div class="flex flex-col">
+                <span class="static-text font-medium">{{'formHeader1' | translate}}</span>
+                <input class="form-field" type="text" pInputText [(ngModel)]="contact.name" />
+            </div>
+            <div class="flex flex-col">
+                <span class="static-text font-medium">{{'formHeader2' | translate}}</span>
+                <input class="form-field" type="text" pInputText [(ngModel)]="contact.replyto" />
+            </div>
+            <div class="flex flex-col">
+                <span class="static-text font-medium">{{'formHeader3' | translate}}</span>
+                 <textarea class="form-field" rows="10" pInputTextarea [autoResize]="true" [(ngModel)]="contact.message"></textarea>
+            </div>
+            <button class="gradient-button" (click)="sendMail()">{{'formButton' | translate}}</button>
+        </div>
     </div>
 </div>

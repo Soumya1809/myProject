@@ -1,0 +1,14 @@
+<div class="footer-screen flex flex-row justify-between items-center w-full">
+    <div class="static-text font-light">
+        Built with ❤️ by Soumya Kannan
+    </div>
+    <div class="flex flex-row gap-4">
+        <div *ngFor="let item of itemLists" class="py-2">
+            <img class="w-8 h-8 cursor-pointer" [src]="item.icon" (click)="onLinkSelection(item.link)"/>
+        </div>
+    </div>
+    <div class="flex flex-row gap-2 items-center">
+        <img class="w-4 h-4" [src]="mode === 'light' ? '/assets/images/copyright.svg' : '/assets/images/copyright_white.svg'"/>
+        <span class="static-text font-light"> 2025 Soumya Kannan</span>
+    </div>
+</div>
