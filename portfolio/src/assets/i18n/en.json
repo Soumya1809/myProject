@@ -4,59 +4,105 @@
     "location": "Stuttgart",
     "subHeader1": "Expertise",
     "subHeader2": "Experience",
-    "description": "Passionate and detail-oriented frontend developer with over 4+ years of dedicated experience, I specialize in creating visually appealing and seamless user experiences. Proficient in HTML, CSS, and TypeScript with expertise in DOM manipulation, Tailwind for modern styling, and Angular for crafting dynamic and responsive web applications. I bring dedication, creativity, and a collaborative spirit to every endeavor.",
-    "experience": [
-        {
-            "company": "Barclays",
-            "logo": "/assets/images/barclays_logo.jpg",
-            "link": "https://www.linkedin.com/company/barclays-bank/",
-            "type": "Fulltime",
-            "duration": "4 years 2 months",
-            "location": "Chennai, India",
-            "roles": [
-                {
-                    "title": "Senior Software Engineer",
-                    "start": "March 2023", 
-                    "end":"November 2024",
-                    "description": [
-                        "Responsible for design and development of in-house reconciliation suite from scratch which includes matching engine, portal to view breaks, etc.",
-                        "Managing UI team which includes task delegation, reviewing pull requests, on-boarding and training new team members.",
-                        "Engaging in requirement analysis, design discussions and proactively suggesting optimal solutions to meet project objectives.",
-                        "Fostering close collaboration with the UI/UX team, maintained rigorous adherence to industry-leading best practices, thereby upholding exceptional standards of code quality throughout the development process."
-                    ]
-                },
-                {
-                    "title": "Graduate Analyst",
-                    "start": "August 2020", 
-                    "end": "February 2023",
-                    "description": [
-                        "Engineered dynamic dashboards, visually appealing charts, responsive grids, and interactive forms tailored for an AI/ML-based application, aimed at providing unparalleled visualization of predictive insights.",
-                        "Pioneered the development of a micro frontend architecture, facilitating the integration of disparate standalone applications into a cohesive and unified platform, thereby enhancing scalability and maintainability",
-                        "Leveraged a diverse array of libraries including Angular Material, Rxjs, AG-Grid, PrimeNg, Ngx-echarts, Gridster, etc.",
-                        "Seamlessly integrated Single Sign On Authentication ensuring streamlined access and heightened security for users.",
-                        "Engineered a rule-based workflow process, empowering users to effortlessly submit, monitor, and approve requests",
-                        "Implemented robust unit testing methodologies, achieving exceptional code coverage and ensuring the reliability and stability of the application."
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "Voice Snap",
-            "logo": "/assets/images/voicesnap_logo.jpg",
-            "link": "https://www.linkedin.com/company/voicesnap-software/",
-            "type": "Intern",
-            "duration": "2 months",
-            "location": "Chennai, India",
-            "roles": [
-                {
-                    "title": "Web Developer",
-                    "start": "May 2018", 
-                    "end":"June 2018", 
-                    "description": [
-                        "Developed Server Management Application to track multiple servers present across different geographical locations."
-                    ]
-                }
-            ]
+    "subHeader3": "Education",
+    "description": "Dedicated software developer with over four years of experience in developing scalable web applications with Angular and Spring Boot. Proficient in HTML, CSS, and TypeScript with expertise in DOM manipulation, Tailwind for modern styling, and Angular for developing dynamic and responsive web applications. Fast learner and open to new technologies for sustainably improving development processes.",
+    "academic": {
+        "experience": [
+            {
+                "company": "Barclays Global Service Centre",
+                "logo": "/assets/images/barclays_logo.jpg",
+                "link": "https://www.linkedin.com/company/barclays-bank/",
+                "type": "Fulltime",
+                "duration": "4 years 2 months",
+                "location": "Chennai, India",
+                "roles": [
+                    {
+                        "title": "Senior Developer",
+                        "start": "March 2023",
+                        "end": "November 2024",
+                        "description": [
+                            "Developed an reconciliation tool from scratch, including a matching engine and a portal for breaks.",
+                            "Led a team of UI developers, overseeing task delegation, code reviews, and onboarding new members.",
+                            "Collaborated with UX team to implement efficient designs and user experience.",
+                            "Implement best coding practices, achieving a 95% code quality score on SonarQube.",
+                            "Proposed and implemented optimal solutions during design discussions, reducing development time."
+                        ]
+                    },
+                    {
+                        "title": "Graduate Analyst",
+                        "start": "August 2020",
+                        "end": "February 2023",
+                        "description": [
+                            "Developed dynamic dashboards and interactive forms for an AI/ML-based application.",
+                            "Pioneered a micro frontend architecture for the reconciliation tool and worked on API integration.",
+                            "Developed a rule-based workflow process enabling users to seamlessly submit and approve requests.",
+                            "Implemented Single Sign-On (SSO) authentication, enhancing system security and user accessibility.",
+                            "Engineered a rule-based workflow process, empowering users to effortlessly submit, monitor, and approve requests.",
+                            "Achieved 90% code coverage by implementing unit test cases to ensuring software stability."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "Indian Institute of Information Technology Design & Manufacturing",
+                "logo": "/assets/images/IIITDM.jpeg",
+                "link": "https://www.linkedin.com/school/indian-institute-of-information-technology-design-&-manufacturing-kancheepuram/",
+                "type": "Intern",
+                "duration": "3 months",
+                "location": "Chennai, India",
+                "roles": [
+                    {
+                        "title": "Research Intern",
+                        "start": "May 2019",
+                        "end": "July 2019",
+                        "description": [
+                            "Worked under Prof. V. Maslimani on building a Bayesian Confidence Propagation Neural Network to detect Adverse Drug Reactions."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "Voice Snap",
+                "logo": "/assets/images/voicesnap_logo.jpg",
+                "link": "https://www.linkedin.com/company/voicesnap-software/",
+                "type": "Intern",
+                "duration": "2 months",
+                "location": "Chennai, India",
+                "roles": [
+                    {
+                        "title": "Web Developer",
+                        "start": "May 2018",
+                        "end": "June 2018",
+                        "description": [
+                            "Developed Server Management Application from scratch to track servers present across different geographical locations."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "education": {
+            "UG": {
+                "title": "Bachelor of Engineering",
+                "field": "Computer Science",
+                "college": "SSN College of Engineering",
+                "university": "Anna University",
+                "logo": "/assets/images/ssn_logo.jpg",
+                "start": "June 2016",
+                "end": "April 2020",
+                "grade": "GPA - 8.6/10",
+                "keynotes": [
+                    "Key Modules: Software Engineering, Programming and data structures, Artificial Intelligence, Data Science",
+                    "Thesis: Prediction of water quality using Machine Learning and Deep Learning Algorithms"
+                ]
+            },
+            "HigherSecondary": {
+                "title": "Higher Secondary Course Certification",
+                "name": "Sethu Bhaskara Matric Higher Secondary School",
+                "logo": "/assets/images/Sethu_Bhaskara.jpeg",
+                "start": "June 2014",
+                "end": "April 2016",
+                "grade": "Grade - 97.8%"
+            }
         }
-    ]
+    }
 }

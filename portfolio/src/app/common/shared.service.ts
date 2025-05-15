@@ -20,9 +20,8 @@ export class SharedService {
 
   public switchLanguage(language: string){
     this.translateService.use(language);
-    this.translateService.get('experience').subscribe(res => {
+    this.translateService.get('academic').subscribe(res => {
       this.$translator.next(res)
     })
   }
-
 }

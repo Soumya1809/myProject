@@ -32,16 +32,12 @@
 .static-text{
     color: var(--font-color);
 }
-.header-container{
-    padding-bottom: 1vh;
-}
 .roles-container{
     padding-left: 2vw;
 }
-.description-container{
+.connection-line{
     border-left: 2px solid var(--font-color);
     margin-left: 7px;
-    
 }
 .role-description{
     padding-left: 1vw;
@@ -53,4 +49,10 @@
     border: 1px solid #4e5ed3;
     border-radius: 50%;
     margin-top: 5px;
+}
+.last-desription{
+    margin-left: 7px;
+}
+.logo{
+    border-radius: 50%;
 }

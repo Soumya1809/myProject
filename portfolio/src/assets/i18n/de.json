@@ -4,59 +4,104 @@
     "location": "Stuttgart",
     "subHeader1": "Fachwissen",
     "subHeader2": "Erfahrungen",
-    "description": "Leidenschaftlicher und detailorientierter Frontend-Entwickler mit mehr als 4 Jahren Erfahrung habe ich mich auf die Erstellung visuell ansprechender und nahtloser Benutzererlebnisse spezialisiert. Ich beherrsche HTML, CSS und TypeScript mit Expertise in DOM-Manipulation, Tailwind für modernes Styling und Angular für die Entwicklung dynamischer und responsiver Webanwendungen. Ich bringe Hingabe, Kreativität und einen kollaborativen Geist in jedes Projekt ein.",
-    "experience": [
-        {
-            "company": "Barclays",
-            "logo": "/assets/images/barclays_logo.jpg",
-            "link": "https://www.linkedin.com/company/barclays-bank/",
-            "type": "Vollzeit",
-            "duration": "4 jahre 2 monate",
-            "location": "Chennai, Indien",
-            "roles": [
-                {
-                    "title": "Senior Entwicklerin",
-                    "start": "März 2023", 
-                    "end":"November 2024",
-                    "description": [
-                        "Verantwortlich für den Entwurf und die Entwicklung der Reconciliation Suite von Grund auf, einschließlich der Matching Engine, des Portals zur Anzeige von Brüchen usw",
-                        "Verwaltung des UI-Teams, einschließlich Aufgabendelegation, Überprüfung von Pull-Anfragen, Einarbeitung und Schulung neuer Teammitglieder.",
-                        "Beteiligung an der Anforderungsanalyse, an Design-Diskussionen und an Vorschlägen für optimale Lösungen zur Erreichung der Projektziele.",
-                        "Motivierte die enge Zusammenarbeit mit dem UI/UX-Team, hielt sich strikt an die branchenführenden Best Practices und bewahrte so während des gesamten Entwicklungsprozesses außergewöhnliche Standards für die Codequalität."
-                    ]
-                },
-                {
-                    "title": "Junior Entwicklerin",
-                    "start": "August 2020", 
-                    "end":"Februar 2023",
-                    "description": [
-                        "Entwicklung dynamischer Dashboards, ansprechender Diagramme, reaktionsschneller Raster und interaktiver Formulare, die auf eine KI/ML-basierte Anwendung zugeschnitten sind und eine unvergleichliche Visualisierung prädiktiver Erkenntnisse bieten sollen",
-                        "Pionierarbeit bei der Entwicklung einer Mikro-Frontend-Architektur, die die Integration unterschiedlicher Einzelanwendungen in eine einheitliche und integrierte Plattform ermöglicht und so die Skalierbarkeit und Wartungsfreundlichkeit verbessert",
-                        "Nutzung einer Vielzahl von Bibliotheken wie Angular Material, Rxjs, AG-Grid, PrimeNg, Ngx-echarts, Gridster usw.",
-                        "Nahtlose Integration von Single Sign On Authentifizierung, die einen optimierten Zugriff und erhöhte Sicherheit für die Benutzer gewährleistet",
-                        "Entwicklung eines regelbasierten Workflow-Prozesses, der es den Benutzern ermöglicht, mühelos Anfragen einzureichen, zu überwachen und zu genehmigen", 
-                        "Implementierung robuster Unit Testing Methoden, die eine außergewöhnliche Code-Abdeckung gewährleisten und die Zuverlässigkeit und Stabilität der Anwendung sicherstellen"
-                    ]
-                }
-            ]
-        },
-        {
-            "company": "Voice Snap",
-            "logo": "/assets/images/voicesnap_logo.jpg",
-            "link": "https://www.linkedin.com/company/voicesnap-software/",
-            "type": "Praktikum",
-            "duration": "2 monate",
-            "location": "Chennai, Indien",
-            "roles": [
-                {
-                    "title": "Web Developer", 
-                    "start": "Mai 2018", 
-                    "end":"Juni 2018", 
-                    "description": [
-                        "Entwicklung einer App für die Serververwaltung/Tracking von Servern an verschiedenen Standorten."
-                    ]
-                }
-            ]
+    "subHeader3": "Ausbildung",
+    "description": "Engagierte Softwareentwicklerin mit über 4 Jahren Erfahrung in der Entwicklung skalierbarer Webanwendungen mit Angular und Spring Boot. Ich beherrsche HTML, CSS und TypeScript mit Expertise in DOM-Manipulation, Tailwind für modernes Styling und Angular für die Entwicklung dynamischer und responsiver Webanwendungen. Schnelle Lernfähigkeit und Offenheit für neue Technologien zur nachhaltigen Verbesserung von Entwicklungsprozessen.",
+    "academic": {
+        "experience": [
+            {
+                "company": "Barclays Global Service Centre GmbH",
+                "logo": "/assets/images/barclays_logo.jpg",
+                "link": "https://www.linkedin.com/company/barclays-bank/",
+                "type": "Vollzeit",
+                "duration": "4 jahre 2 monate",
+                "location": "Chennai, Indien",
+                "roles": [
+                    {
+                        "title": "Senior entwicklerin",
+                        "start": "März 2023",
+                        "end": "November 2024",
+                        "description": [
+                            "Entwicklung einer firmeneigenen Reconciliation-Suite mit Matching-Engine, Portal für Breaks-Management, dashboard für Proofing wodurch die Betriebseffizienz um 30 % gesteigert wurde.",
+                            "Führung eines UI Team inkl. Aufgabenverteilung, Code Reviews und Einarbeitung neuer Kollegen.",
+                            "Enge Zusammenarbeit mit UX und Backend Team zur Umsetzung moderner UI-Designs.",
+                            "Einhaltung von Clean Code-Prinzipien mit einer Codequalität von 95 % laut SonarQube.",
+                            "Proaktive Vorschläge bei Architekturentscheidungen führten zu einer 15 % schnelleren Entwicklung."
+                        ]
+                    },
+                    {
+                        "title": "Junior entwicklerin",
+                        "start": "August 2020",
+                        "end": "Februar 2023",
+                        "description": [
+                            "Entwicklung interaktiver Dashboards und Formulare für eine KI/ML-basierte Anwendung - Steigerung der Nutzerbindung um 25 %.",
+                            "Einführung einer Micro-Frontend-Architektur, die die Integrationszeit neuer Anwendungen um 40 % reduzierte.",
+                            "Umsetzung eines regelbasierten Workflows für Antragsprozesse und Genehmigungen.",
+                            "Implementierung von Single Sign-On zur Verbesserung der Sicherheit und Nutzerfreundlichkeit.",
+                            "Erzielung von 90 % Codeabdeckung durch umfassende Unittests."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "Indian Institute of Information Technology Design & Manufacturing",
+                "logo": "/assets/images/IIITDM.jpeg",
+                "link": "https://www.linkedin.com/school/indian-institute-of-information-technology-design-&-manufacturing-kancheepuram/",
+                "type": "Intern",
+                "duration": "3 monate",
+                "location": "Chennai, India",
+                "roles": [
+                    {
+                        "title": "Research Intern",
+                        "start": "Mai 2019",
+                        "end": "Juli 2019",
+                        "description": [
+                            "Entwicklung eines Bayesschen Confidence Propagation Neural Network zur Erkennung von Arzneimittelnebenwirkungen unter Prof. V. Maslimani."
+                        ]
+                    }
+                ]
+            },
+            {
+                "company": "Voice Snap",
+                "logo": "/assets/images/voicesnap_logo.jpg",
+                "link": "https://www.linkedin.com/company/voicesnap-software/",
+                "type": "Praktikum",
+                "duration": "2 monate",
+                "location": "Chennai, Indien",
+                "roles": [
+                    {
+                        "title": "Web Developer",
+                        "start": "Mai 2018",
+                        "end": "Juni 2018",
+                        "description": [
+                            "Entwicklung einer Server Management Anwendung zur standortbasierten Nachverfolgung von Servern."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "education": {
+            "UG": {
+                "title": "Bachelor of Engineering",
+                "field": "Informatik",
+                "college": "SSN College of Engineering",
+                "university": "Anna Universität",
+                "logo": "/assets/images/ssn_logo.jpg",
+                "start": "Juni 2016",
+                "end": "April 2020",
+                "grade": "Note: 8,68/10 (entspricht ECTS: 1,42)",
+                "keynotes": [
+                    "Relevante Module: Software Engineering, Programmierung & Datenstrukturen, KI, Data Science",
+                    "Bachelorarbeit: Vorhersage der Wasserqualität mittels Machine Learning und Deep Learning"
+                ]
+            },
+            "HigherSecondary": {
+                "title": "Abitur",
+                "name": "Sethu Bhaskara Matric Higher Secondary School",
+                "logo": "/assets/images/Sethu_Bhaskara.jpeg",
+                "start": "Juni 2014",
+                "end": "April 2016",
+                "grade": "Abschlussnote: 97,8%"
+            }
         }
-    ]
+    }
 }

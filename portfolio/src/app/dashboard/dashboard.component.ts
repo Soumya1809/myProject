@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../common/shared.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -21,15 +22,17 @@ export class DashboardComponent implements OnInit {
     {title: 'Sql', imageSrc: '/assets/images/sql.png', class: 'shadow-lime-400'}    
   ];
   public experiences: any; 
-  constructor(private sharedService: SharedService) {
+  public education: any;
+  constructor(private sharedService: SharedService, private translateService: TranslateService) {
     this.sharedService.$themeObservable.subscribe(value => {
       if(value != ""){
         this.mode = value;
       }
     });
-    this.sharedService.$translatorObservable.subscribe(value =>{
+    this.sharedService.$translatorObservable.subscribe((value: any) =>{
       if(value != null && value != ""){
-        this.experiences = value;
+        this.experiences = value['experience'];
+        this.education = value ['education'];
       }
     })
    }
